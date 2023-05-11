@@ -41,10 +41,15 @@ const lessonSchema = new Schema({
     date: {
         type: Date
     },
-    location: {
+    latitude: {
         type: String,
         default: null
     },
+    longitude: {
+        type: String,
+        default: null
+    },
+    
     attendance: [
         {
             type: String,

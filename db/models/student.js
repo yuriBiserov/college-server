@@ -13,6 +13,8 @@ const studentSchema = new Schema({
         trim: true,
         required: true,
         unique: true,
+        minlength: 9,
+        maxlength: 9,
     },
     password: {
         type: String,
@@ -33,10 +35,10 @@ const studentSchema = new Schema({
         type: String,
         required: true,
         trim: true,
-        enum:coursesEnum
+        enum: coursesEnum
     },
-    year:{
-        type:Number
+    year: {
+        type: Number
     },
     courses: [
         {
