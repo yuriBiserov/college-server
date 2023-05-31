@@ -21,7 +21,7 @@ app.use('/lessons', LessonRouter)
 app.use('/classes', ClassRouter)
 
 
-const port = process.env.PORT || 9000
+const port = 7070
 app.listen(port, () => {
     console.log(`Listening at port: http://localhost:${port}`);
 })
